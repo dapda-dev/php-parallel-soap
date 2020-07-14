@@ -553,7 +553,6 @@ class ParallelSoapClient extends \SoapClient implements LoggerAwareInterface
                 $this->addDebugData($ex, $this->lastRequestId);
                 $resArr[$id] = $ex;
             }
-            unset($this->soapResponses[$id]);
         }
         $this->xmlResponse = '';
         $this->soapMethod = '';
